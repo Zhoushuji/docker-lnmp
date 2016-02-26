@@ -12,3 +12,5 @@
 浏览器访问 http://ip-address:808
 
 可以根据需求修改 docker-compose.yml 配置文件，比如调整端口映射（默认为 808:80）。
+
+编辑 `nginx/default.conf` 修改网站配置。

@@ -1,0 +1,23 @@
+nginx:
+  build: ./nginx
+  volumes:
+    - ./www:/user/share/nginx/html
+  ports:
+    - "808:80"
+  links:
+    - "php:php-fpm"
+php:
+  build: ./php
+  volumes:
+    - ./www:/user/share/nginx/html
+  links:
+    - "db:mariadb"
+
+db:
+  image: mariadb:10.1
+  volumes:
+    - ./mariadb/datadir:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: 123456
+    
+

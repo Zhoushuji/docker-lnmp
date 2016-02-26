@@ -1,0 +1,5 @@
+*.DS_Store
+._.gitignore
+www/
+datadir/
+._sources.list

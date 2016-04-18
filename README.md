@@ -1,16 +1,20 @@
 # docker-lnmp
-用Docker构建更高可控性的LNMP运行环境
+
+用 Docker 快速构建 Nginx + PHP + MySQL 开发/生产环境。
 
 ### 使用方法：
 
-`$ git clone https://github.com/getnas/docker-lnmp.git .`
+```
+将项目克隆至本地
+$ git clone https://github.com/getnas/docker-lnmp.git
 
-`$ mkdir www mariadb mariadb/datadir`
+进入项目目录，根据需要编辑相关配置文件。
 
-`$ docker-compose up -d`
+启动项目
+$ docker-compose up -d
 
-浏览器访问 http://ip-address:808
+```
 
-可以根据需求修改 docker-compose.yml 配置文件，比如调整端口映射（默认为 808:80）。
+浏览器访问 http://ip-address
 
-编辑 `nginx/default.conf` 修改网站配置。
+可以根据需求修改 docker-compose.yml 配置文件。

@@ -14,3 +14,8 @@ php:
   volumes:
     - ./website/default/:/usr/share/nginx/html/default/
     - ./website/jushu/:/usr/share/nginx/html/jushu/
+
+db:
+  image: mysql:5.5
+  environment:
+    MYSQL_ROOT_PASSWORD: 123456

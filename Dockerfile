@@ -5,6 +5,7 @@ COPY ./sources.list /etc/apt/
 
 # PHP 配置文件
 COPY ./php.ini /usr/local/etc/php/
+COPY ./www.conf /usr/local/etc/php-fpm.d/
 
 # 安装需要的类库
 RUN apt-get update && apt-get install -y \

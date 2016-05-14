@@ -18,3 +18,11 @@ $ docker-compose up -d
 浏览器访问 http://ip-address
 
 可以根据需求修改 docker-compose.yml 配置文件。
+
+### 进入容器
+
+使用如下命令进入容器
+
+```
+docker exec -it container_name /bin/bash
+```

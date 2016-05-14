@@ -1,7 +1,7 @@
 server:
   image: nginx:stable
   volumes:
-    - ./website/:/usr/share/nginx/html/
+    - ./website/:/var/www/html/
     - ./conf.d/:/etc/nginx/conf.d/
     - ./nginx.conf:/etc/nginx/nginx.conf
   ports:

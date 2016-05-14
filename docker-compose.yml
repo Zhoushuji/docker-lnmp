@@ -12,8 +12,7 @@ server:
 php:
   build: .
   volumes:
-    - ./website/default/:/usr/share/nginx/html/default/
-    - ./website/jushu/:/usr/share/nginx/html/jushu/
+    - ./website/default/:/var/www/html/default/
   links:
     - "db:mysql"
 
